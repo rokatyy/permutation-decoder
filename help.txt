@@ -1,0 +1,4 @@
+it is little script for decoding permutation cipter
+-h for help
+usage:
+python3 main.py <filename> <keyword>
