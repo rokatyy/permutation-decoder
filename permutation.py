@@ -21,7 +21,8 @@ def transformation (matr, index, keyword):
 			except:
 				pass
 	if keyword !=None:
-		if new_string.find(keyword)>=0:print(new_string)
+		if new_string.find(keyword)>=0: print(new_string)
+	else: return(new_string)
 
 def decoding(string,keyword):
 	for key in range(7,10):
@@ -31,7 +32,6 @@ def decoding(string,keyword):
 			indexes = ''.join(i)
 			result = transformation(matr, list(indexes),keyword)
 			
-		#for i in variable:
-			#print(i)
-		
-		
+def encoding(string, indexes):
+	matr = matrix(string, len(indexes))
+	return transformation(matr, list(indexes), None)

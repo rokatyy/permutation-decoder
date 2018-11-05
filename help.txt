@@ -1,4 +1,7 @@
 it is little script for decoding permutation cipter
 -h for help
 usage:
-python3 main.py <filename> <keyword>
+decoding: python3 run.py -d <filename> <keyword>
+encoding: python3 run.py -e <input_file> <output_file> <indexes_string>(*)
+
+(*)for example len key = 3, so indexes_string could me like 021 or 201..
